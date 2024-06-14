@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body {
+            background-color: #676767;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Images</h1>
+
+    <!-- ./ = Same Folder & ../ = Pichla Folder  -->
+    <img src="./HTML_Practice.jpg" width="400px" alt="no image">
+    <img src="./HTML_Practie.jpg" width="400px" alt="no image">
+
+    <picture>
+        <source media="(min-width:500px)" srcset="./HTML_Practce.jpg" />
+        <source media="(min-width:300px)" srcset="./HTML_Practce.jpg" />
+        <img src="./HTML_Practce.jpg" alt="no image">
+    </picture>
+
+    <!-- image map generator -->
+
+    <img src="HTML_Practice.jpg" usemap="#image-map">
+    
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="24,57,98,123" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="300,346,178,296" shape="rect">
+</map>
+
+<script>
+    function one() {
+        alert("You clicked on one")
+    }
+    function two() {
+        alert("You clicked on two")
+    }
+</script>
+
+</body>
+</html>
