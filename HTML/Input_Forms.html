@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Input Forms</title>
+    <style>
+        body {
+            background-color: #575757;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Different Type of Forms</h1>
+
+    <form action="" method="GET" accept-charset="UTF-8">
+
+        <label for="fname">Full Name</label>
+        <input type="text" name="" id="fname" placeholder="Full Name" value="Hitesh">
+
+        <input type="week" name="" id="">
+
+        <select name="editors" id="" multiple> 
+            <option value="vscode">vscode</option>
+            <option value="sublimetext">sublime text</option>
+        </select>
+
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="vscode">vscode</option>
+            <option value="sublimetext">sublime text</option>
+        </datalist>
+
+        <input type="reset" value="reset">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <br />
+<div>
+    <p>Audio Settings: -</p>
+    <input type="range" name="Volume" id="volume" min="0" max="11">
+    <label for="volume">Volume</label>
+</div>
+<div>
+    <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+    <label for="cowbell">Cowbell</label>
+  </div>
+
+  <form>
+    <p>Select your favourite fruit:</p>
+    <input type="radio" name="fruit" id="apple" value="apple">
+    <label for="apple">Apple</label><br/>
+    <input type="radio" name="fruit" id="banana" value="banana">
+    <label for="banana">Banana</label><br/>
+    <input type="radio" name="fruit" id="orange" value="orange">
+    <label for="orange">Orange</label><br/>
+  </form>
+
+  <br/>
+
+  <form>
+    <p>Select your favourite fruits:</p>
+    <input type="checkbox" name="fruit" id="apple" value="apple">
+    <label for="apple">Apple</label><br/>
+    <input type="checkbox" name="fruit" id="banana" value="banana">
+    <label for="banana">Banana</label><br/>
+    <input type="checkbox" name="fruit" id="orange" value="orange">
+    <label for="orange">Orange</label><br/>
+  </form>
+
+</body>
+</html>
